@@ -1,5 +1,13 @@
-function goToWebsite() {
-  var url = document.getElementById('urlInput').value;
+function activatePage(pageId) {
+  console.log(pageId);
+  var pageOneElement = document.getElementById('pageOne');
+  var pageTwoElement = document.getElementById('pageTwo');
 
-  window.open(url, '_blank');
+  if(pageId === 'pageOne') {
+    pageTwoElement.style.display = 'none';
+    pageOneElement.style.display = 'block';
+  } else if(pageId === 'pageTwo') {
+    pageOneElement.style.display = 'none';
+    pageTwoElement.style.display = 'block';
+  }
 }

@@ -6,9 +6,13 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <input id="urlInput" type="text">
+    <ul>
+      <li onclick="activatePage('pageOne')">One</li>
+      <li onclick="activatePage('pageTwo')">Two</li>
+    </ul>
 
-    <button onclick="goToWebsite()">Go To Website</button>
+    <div id="pageOne" class="page">Page One</div>
+    <div id="pageTwo" class="page" style="display: none;">Page Two</div>
 
     <script src="script.js"></script>
   </body>
