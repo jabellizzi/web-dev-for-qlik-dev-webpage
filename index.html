@@ -3,20 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>My Web Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <ul>
-      <li onclick="openPage('pageOne')">Page One</li>
-      <li onclick="openPage('pageTwo')">Page Two</li>
-    </ul>
-    
-    <div id="pageOne" class="page">
-      <h1>This is page 1</h1>
-    </div>
+    <div id="myDiv" class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div id="chart-0" class="chart"></div>
+        </div>
 
-    <div id="pageTwo" class="page hidden">
-      <h1>This is page 2</h1>
+        <div class="col-md-4">
+          <div id="chart-1" class="chart"></div>
+        </div>
+
+        <div class="col-md-4">
+          <div id="chart-2" class="chart"></div>
+        </div>
+
+        <div class="col-md-12">
+          <div id="chart-3" class="chart"></div>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
