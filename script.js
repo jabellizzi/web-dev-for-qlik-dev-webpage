@@ -1,6 +1,16 @@
-function goToWebsite() {
-  var inputElement = document.getElementById('urlInput');
+function openPage(pageId) {
+  var pageOneElement = document.getElementById('pageOne');
+  var pageTwoElement = document.getElementById('pageTwo');
 
-  var url = inputElement.value;
-  window.open(url, '_blank');
+  if(pageId === 'pageOne') {
+    /* add hidden class to pageTwo and remove hidden class
+        from page one */
+
+    pageTwoElement.classList.add('hidden');
+    pageOneElement.classList.remove('hidden');
+  }
+  else if(pageId === 'pageTwo') {
+    pageOneElement.classList.add('hidden');
+    pageTwoElement.classList.remove('hidden');
+  }
 }

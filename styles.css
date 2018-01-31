@@ -15,3 +15,7 @@ body {
 #pageTwo {
   background-color: lightcoral;
 }
+
+.hidden {
+  display: none;
+}
