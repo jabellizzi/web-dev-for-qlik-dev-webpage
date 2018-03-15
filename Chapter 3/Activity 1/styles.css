@@ -1,0 +1,14 @@
+body {
+  font-family: arial;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #888888
+}
+
+.custom-paragraph {
+  font-size: 1em;
+  margin: 30px;
+}
